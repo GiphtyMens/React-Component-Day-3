@@ -1,5 +1,5 @@
+import TextField from "@mui/material/TextField";
+
 export const Input = () => {
-    return (
-        <input type="text" />
-    )
-}
+  return <TextField type="text" label="Username" />;
+};

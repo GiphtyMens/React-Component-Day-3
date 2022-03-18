@@ -2,6 +2,7 @@
 // prop is passed out from some where into the component but state is generated with the component
 
 import React from "react";
+import Button from "@mui/material/Button"
 
 export const Counter = () => {
   const [value, setValue] = React.useState(0); // initial value(value) and function to set the value(setValue)
@@ -15,8 +16,8 @@ export const Counter = () => {
   return (
     <div>
       <h1>{value}</h1>
-      <button onClick={handleIncrease}>Increase</button>
-      <button onClick={handleDecrease}>Decrease</button>
+      <Button variant="outlined" onClick={handleIncrease}>+ Increase</Button>
+      <Button variant="contained" color="error" onClick={handleDecrease}>Decrease -</Button>
     </div>
   );
 };

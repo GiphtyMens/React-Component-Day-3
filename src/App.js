@@ -5,11 +5,12 @@ import {Paragraph} from "./components/Paragraph";
 import {Input} from "./components/Input";
 import { MySelf } from "./components/MySelf";
 import {Counter} from "./components/Counter";
+import Container from './components/container/Container';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar />
       <Paragraph />
       <Input />
       <MySelf name="Giphty" age={25} gender="female" />
@@ -18,7 +19,8 @@ function App() {
       <MySelf name="Belinda" age={28} gender="female" />
       <MySelf name="Cindy" age={40} gender="female" />
       <MySelf name="Patoo" age={100} gender="male" />
-      <Counter />
+      <Counter /> */}
+      <Container />
     </div>
   );
 }
